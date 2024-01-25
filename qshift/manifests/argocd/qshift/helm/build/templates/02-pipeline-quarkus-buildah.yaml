@@ -87,7 +87,7 @@ spec:
     #        type: string
     #    steps:
     #      - name: create-container
-    #        image: ghcr.io/ch007m/podman-client
+    #        image: ghcr.io/iocanel/podman-client
     #        script: |
     #          echo "Creating a container against daemon host: $(params.dockerHost)."
     #          PODMAN_CMD="podman -r --url=tcp://$(params.dockerHost):2376"

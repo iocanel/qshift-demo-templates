@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: toto-app # ${{ values.component_id }}-dev
+  name: qshift-app # ${{ values.component_id }}-dev
   namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,14 +11,14 @@ spec:
     server: https://kubernetes.default.svc
     namespace: qshift # ${{ values.namespace }}
   source:
-    repoURL: https://github.com/ch007m/my-backstage-templates # ${{ values.destination }}
-    path: ./qshift/manifests/argocd/toto/helm/app
+    repoURL: https://github.com/iocanel/qshift-demo-templates # ${{ values.destination }}
+    path: ./qshift/manifests/argocd/qshift/helm/app
     targetRevision: HEAD
     helm:
       values: |
         namespace.name: qshift
         environment: dev
-        component_id: toto
+        component_id: qshift
   syncPolicy:
     automated:
       prune: true

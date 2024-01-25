@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: toto
+  name: qshift
   annotations:
-    backstage.io/kubernetes-id: toto
+    backstage.io/kubernetes-id: qshift
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: ch007m/toto
-    argocd/app-name: toto
+    github.com/project-slug: iocanel/qshift
+    argocd/app-name: qshift
 spec:
   type: api
   lifecycle: production

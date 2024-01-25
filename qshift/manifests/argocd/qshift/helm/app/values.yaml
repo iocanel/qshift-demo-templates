@@ -2,8 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-component_id: toto
-deployment_name: toto-dev
+component_id: qshift
+deployment_name: qshift-dev
 
 namespace:
   enabled: true
@@ -16,7 +16,7 @@ image:
   pullPolicy: IfNotPresent
   registry: Quay
   host: quay.io
-  organization: ch007m
+  organization: iocanel
   name: my-quarkus-app
   tag: latest
   # Overrides the image tag whose default is the chart appVersion.

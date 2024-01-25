@@ -22,11 +22,11 @@ spec:
         orgName:
           title: Organization Name
           type: string
-          default: ch007m
+          default: iocanel
         repoName:
           title: Repository Name
           type: string
-          default: toto
+          default: qshift
         description:
           title: Description
           type: string

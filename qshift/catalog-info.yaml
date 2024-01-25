@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: backstage-quarkus-template
   annotations:
-    github.com/project-slug: ch007m/backstage-quarkus-template
+    github.com/project-slug: iocanel/qshift-demo-templates
 spec:
   type: other
   lifecycle: development
